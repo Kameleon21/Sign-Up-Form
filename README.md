@@ -1,3 +1,3 @@
 # Sign-Up-Form
 
-credits GR Stocks
+credits Ugur Tandogan website Pexels
