@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+}
+
+form label {
+    display: block;
+}
+
+.top {
+    height: 100vh;
+    width: 600px;
+}
+
+.top img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 600px;
+    height: inherit;
+}
