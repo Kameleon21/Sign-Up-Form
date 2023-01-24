@@ -5,25 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Sign Up Form</title>
 </head>
 <body>
     <header class="top">
-        <img src="./images/dino-reichmuth-d6yDSisNi4w-unsplash.jpg" alt="">
+        <div class="hero">
+            <img src="./images/odin-lined.png" alt="picture of the odin logo">
+            <h1>Possible Reality</h1>
+        </div>
+        <img src="./images/pexels-ugur-tandogan-15073738.jpg" alt="">
     </header>
 
     <main class="contain">
+        <div class="top-main">
+            <h2>This is not a real Service! Ex veniam accusamus eos, voluptatibus blanditiis aut at cupiditate quam quibusdam, autem neque? Nihil laboriosam quae accusamus quod quisquam omnis repudiandae qui.</h2>
+            <p>You know you want to!</p>
+        </div>
         <form method="post">
-            <div class="left-side">
-                <label for="fName">First Name</label><input type="text" name="fName" id="">
-                <label for="LName">Last Name</label><input type="text" name="LName" id="">
-                <label for="email">Email</label><input type="email" name="email" id="">
+            <p>Lets do this!</p>
+            <div class="contain-form">
+                <div class="left-side">
+                    <label for="fName">First Name</label><input type="text" name="fName" id="">
+                    <label for="email">Email</label><input type="email" name="email" id="">
+                    <label for="passcode">Password</label><input type="password" name="passcode" id="">
+                </div>
+                <div class="right-side">
+                    <label for="LName">Last Name</label><input type="text" name="LName" id="">
+                    <label for="phoneNum">Phone Number</label><input type="number" name="phoneNum" id="">
+                    <label for="confirmPass">Confirm Password</label><input type="password" name="confirmPass" id="">
+                </div>
             </div>
-            <div class="right-side">
-                <label for="phoneNum">Phone Number</label><input type="number" name="phoneNum" id="">
-                <label for="passcode">Password</label><input type="password" name="passcode" id="">
-                <label for="confirmPass">Confirm Password</label><input type="password" name="confirmPass" id="">
-            </div>
+            <div class="bottom-main">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div> 
         </form>
     </main>
     <script src="./script.js"></script>
