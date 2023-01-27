@@ -144,9 +144,10 @@ a[href^="#"] {
 /* validation */
 input:required:focus:valid {
     border: 2px green solid;
-    background: url(./images/tick-circle-svgrepo-com.svg) no-repeat 95% 50% rgba(0,100,0,.6);
+    background: url(./images/tick-circle-svgrepo-com.svg) no-repeat 95% 50% white ;
     background-size: 25px;
     border-color: green;
+    box-shadow: 3px 5px 3px 3px green;
 }
 
 input:required:focus:invalid {
@@ -154,20 +155,38 @@ input:required:focus:invalid {
     border-color: red;
     background: url(./images/alert-hexagon-svgrepo-com.svg) no-repeat 95% 50% rgba(150,0,0,.6);
     background-size: 25px;
+    box-shadow: 3px 3px 3px px red;
 }
 
-/* @media screen and (max-width:900px) {
+#match {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: red;
+    top: 12.7rem;
+    left: .2rem;
+    visibility: hidden;
+}
+
+#match2 {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: red;
+    top: 13.5rem;
+    left: .2rem;
+    visibility: hidden;
+}
+
+@media screen and (max-width:1100px) {
     body{
         flex-direction: column;
-        width: 600px;
-        margin: auto;
+        width: fit-content;
     }
     
-    img {
-        height: 500px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: auto;
-
+    #main-img {
+        width: 100vw;
     }
-} */
+}

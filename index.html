@@ -13,7 +13,7 @@
             <img src="./images/odin-lined.png" alt="Odin Logo" id="Logo">
             <h1>Possible Reality</h1>
         </div>
-        <img src="./images/pexels-ugur-tandogan-15073738.jpg" alt="View from window at nighttime">
+        <img src="./images/pexels-ugur-tandogan-15073738.jpg" alt="View from window at nighttime" id="main-img">
         <div class="credit">
             <p>Photo by Ugur Tandogan on <a href="https://www.pexels.com/" target="_blank">pexels</a></p>
         </div>
@@ -28,18 +28,19 @@
         <div class="contain-form">
             <div class="left-side">
                 <label for="fName">First Name</label><input type="text" name="fName">
-                <label for="email">Email</label><input type="email" name="email" id="tick" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                <label for="passcode">Password</label><input type="password" name="passcode" required id="passcode1" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
-                " title="One UpperCase,One Lower Case and Number">
+                <label for="email">Email</label><input type="email" name="email" id="tick" required>
+                <label for="passcode">Password</label><input type="password" name="passcode" required id="passcode1" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
             </div>
+            <p id="match">* Passwords don't match</p>
+            <p id="match2">UpperCase, LowerCase, Number/SpecialChar and min 8 Chars</p>
             <div class="right-side">
                 <label for="LName">Last Name</label><input type="text" name="LName" >
-                <label for="phoneNum">Phone Number</label><input type="number" name="phoneNum">
+                <label for="phoneNum">Phone Number</label><input type="text" name="phoneNum" minlength="10" required>
                 <label for="confirmPass">Confirm Password</label><input type="password" name="confirmPass" required id="passcode2">
             </div>
         </div>
         <div class="bottom-main">
-            <button type="submit">Create Account</button>
+            <button type="submit" id="btn">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div> 
     </form>
