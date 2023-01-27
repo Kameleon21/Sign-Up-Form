@@ -19,31 +19,30 @@
         </div>
     </header>
 
-    <main class="contain">
+    
+    <form method="post">
         <div class="top-main">
             <h2>This is not a real Service! Ex veniam accusamus eos, voluptatibus blanditiis aut at cupiditate quam quibusdam, autem neque? Nihil laboriosam quae accusamus quod quisquam omnis repudiandae qui.</h2>
             <p>You know you want to!</p>
         </div>
-        <form method="post">
-            <p>Lets do this!</p>
-            <div class="contain-form">
-                <div class="left-side">
-                    <label for="fName">First Name</label><input type="text" name="fName" required autofocus minlength="3" maxlength="20">
-                    <label for="email">Email</label><input type="email" name="email" id="tick">
-                    <label for="passcode">Password</label><input type="password" name="passcode"   pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
-                </div>
-                <div class="right-side">
-                    <label for="LName">Last Name</label><input type="text" name="LName" id="tick" required minlength="4" maxlength="20">
-                    <label for="phoneNum">Phone Number</label><input type="number" name="phoneNum" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
-                    <label for="confirmPass">Confirm Password</label><input type="password" name="confirmPass" id="tick" required min="5" max="10">
-                </div>
+        <div class="contain-form">
+            <div class="left-side">
+                <label for="fName">First Name</label><input type="text" name="fName">
+                <label for="email">Email</label><input type="email" name="email" id="tick" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <label for="passcode">Password</label><input type="password" name="passcode" required id="passcode1" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+                " title="One UpperCase,One Lower Case and Number">
             </div>
-            <div class="bottom-main">
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </div> 
-        </form>
-    </main>
+            <div class="right-side">
+                <label for="LName">Last Name</label><input type="text" name="LName" >
+                <label for="phoneNum">Phone Number</label><input type="number" name="phoneNum">
+                <label for="confirmPass">Confirm Password</label><input type="password" name="confirmPass" required id="passcode2">
+            </div>
+        </div>
+        <div class="bottom-main">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div> 
+    </form>
     <script src="./script.js"></script>
 </body>
 </html>
