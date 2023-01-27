@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Oswald&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,6 +8,8 @@
 
 body {
     display: flex;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* header */
@@ -25,22 +30,33 @@ img {
 .hero {
     position: absolute;
     top: 14rem;
-    width: 600px;
-    background-color: rgba(0,0,0,.5);
+    width: 565px;
+    background-color: rgba(0,0,0,.3);
+    padding: 1rem;
 }
 
-.hero img {
+#Logo {
     width: 100px;
     height: auto;
-    position: relative;
-    top: 6.5rem;
-    left: 6rem;
+    position: absolute;
+    left: 6.5rem;
 }
 
 .top h1 {
     text-align: center;
     color: #e6007e;
     padding: 2.5rem;
+}
+
+.credit {
+    position: absolute;
+    color: rgba(50, 50, 50, .7);
+    top: 97vh;
+    left: 11.3rem;
+}
+
+a[href^="https"] {
+    color: rgba(50, 50, 50, .7);
 }
 /* Main container*/
 .contain {
@@ -77,12 +93,13 @@ form {
     display: flex;
     flex-direction: column;
     width: 300px;
-    gap: 10px;
-    letter-spacing: 3px;
+    gap: 5px;
+    letter-spacing: 2px;
 }
 
 input {
     border-radius: 5px;
+    padding: 8px;
 }
 
 form button {
@@ -105,6 +122,10 @@ a[href^="#"] {
     color: #e6007e;
 }
 
+input:valid {
+    border: 1px solid rgba(0,200,0,.8);
+    background-color: rgba(0,180,0,.3);;
+}
 
 /* @media screen and (max-width:900px) {
     body{

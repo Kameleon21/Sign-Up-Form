@@ -10,10 +10,13 @@
 <body>
     <header class="top">
         <div class="hero">
-            <img src="./images/odin-lined.png" alt="picture of the odin logo">
+            <img src="./images/odin-lined.png" alt="Odin Logo" id="Logo">
             <h1>Possible Reality</h1>
         </div>
-        <img src="./images/pexels-ugur-tandogan-15073738.jpg" alt="">
+        <img src="./images/pexels-ugur-tandogan-15073738.jpg" alt="View from window at nighttime">
+        <div class="credit">
+            <p>Photo by Ugur Tandogan on <a href="https://www.pexels.com/" target="_blank">pexels</a></p>
+        </div>
     </header>
 
     <main class="contain">
@@ -25,14 +28,14 @@
             <p>Lets do this!</p>
             <div class="contain-form">
                 <div class="left-side">
-                    <label for="fName">First Name</label><input type="text" name="fName" id="">
-                    <label for="email">Email</label><input type="email" name="email" id="">
-                    <label for="passcode">Password</label><input type="password" name="passcode" id="">
+                    <label for="fName">First Name</label><input type="text" name="fName" required autofocus minlength="3" maxlength="20">
+                    <label for="email">Email</label><input type="email" name="email" id="tick">
+                    <label for="passcode">Password</label><input type="password" name="passcode"   pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                 </div>
                 <div class="right-side">
-                    <label for="LName">Last Name</label><input type="text" name="LName" id="">
-                    <label for="phoneNum">Phone Number</label><input type="number" name="phoneNum" id="">
-                    <label for="confirmPass">Confirm Password</label><input type="password" name="confirmPass" id="">
+                    <label for="LName">Last Name</label><input type="text" name="LName" id="tick" required minlength="4" maxlength="20">
+                    <label for="phoneNum">Phone Number</label><input type="number" name="phoneNum" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                    <label for="confirmPass">Confirm Password</label><input type="password" name="confirmPass" id="tick" required min="5" max="10">
                 </div>
             </div>
             <div class="bottom-main">
