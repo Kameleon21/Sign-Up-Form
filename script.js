@@ -12,5 +12,6 @@ submit.addEventListener('click',() => {
         para.style.visibility = "visible";
         para2.style.visibility = "visible";
         submit.type = "button";
+        pass2.style.backgroundColor = "rgb(150,0,0)"
     }
 })
