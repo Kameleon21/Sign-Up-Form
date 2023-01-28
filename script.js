@@ -6,11 +6,7 @@ const para2 = document.getElementById('match2');
 
 // Checkes if passwords are matching 
 submit.addEventListener('click',() => {
-    if(pass1.value === '') {
-        alert('Please fill out the password section');
-    } else if(pass2.value === '') {
-        alert ("Please confirm your password")
-    } else if (pass1.value === pass2.value) {
+     if (pass1.value === pass2.value) {
         submit.type = "sumbit";
     } else if (!(pass1.value === pass2.value)) {
         para.style.visibility = "visible";

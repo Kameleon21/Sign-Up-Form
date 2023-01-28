@@ -116,6 +116,7 @@ form p {
 input {
     border-radius: 5px;
     padding: 8px;
+    border-color: #000;
 }
 
 form button {
@@ -144,10 +145,9 @@ a[href^="#"] {
 /* validation */
 input:required:focus:valid {
     border: 2px green solid;
-    background: url(./images/tick-circle-svgrepo-com.svg) no-repeat 95% 50% white ;
+    background: url(./images/tick-circle-svgrepo-com.svg) no-repeat 95% 50% rgba(0,150,0,0.6) ;
     background-size: 25px;
     border-color: green;
-    box-shadow: 3px 5px 3px 3px green;
 }
 
 input:required:focus:invalid {
@@ -155,7 +155,6 @@ input:required:focus:invalid {
     border-color: red;
     background: url(./images/alert-hexagon-svgrepo-com.svg) no-repeat 95% 50% rgba(150,0,0,.6);
     background-size: 25px;
-    box-shadow: 3px 3px 3px px red;
 }
 
 #match {
@@ -180,13 +179,30 @@ input:required:focus:invalid {
     visibility: hidden;
 }
 
-@media screen and (max-width:1100px) {
-    body{
-        flex-direction: column;
-        width: fit-content;
-    }
-    
+/* laptops */
+@media screen and (max-width:1350px) {
     #main-img {
-        width: 100vw;
+        width: 500px;
+        height: 100vh;
+    }
+
+    .hero {
+        width: 450px;
+    }
+
+    #Logo{
+        left: 2.7rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .contain-form {
+        width: 500px;
+    }
+
+    .credit{
+        left: 8rem;
     }
 }
